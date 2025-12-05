@@ -2,6 +2,8 @@ import './App.css';
 import Click from './components/Click';
 import Header from './components/Header';
 import Main from './components/Main';
+import No_state from './components/No_state';
+import Ternary from './components/Ternary';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <Main />
       {/* <Click /> */}
+      {/* <No_state /> */}
+      <Ternary />
     </div>
   );
 }

@@ -9,13 +9,13 @@ const Main = () => {
   //   inputRef.current.focus(); //"inputRef.current.value" targets the current value of the element that is using useRef, while "inputRef.current.focus()" causes the cursor to focus on the input box
   // }
 
-  // const ingridients = ["oregano", "tomato", "basil", "chili flakes"];
+  const ingridients = ["oregano", "tomato", "basil", "chili flakes"];
 
-  // const ingridientList = ingridients.map((ingridient, index) => (
-  //   <li key={index}>
-  //     {ingridient}
-  //   </li>
-  // ))
+  const ingridientList = ingridients.map((ingridient, index) => (
+    <li key={index}>
+      {ingridient}
+    </li>
+  ))
 
   
   function handleFormSubmit(event) {
@@ -23,10 +23,10 @@ const Main = () => {
     // alert("form submitted");
 
     //Accessing the value of the input field using get("name") Note: "name" refers to the name attribute of the input field
-    const formData = new FormData(event.target);
-    const newIngredient = formData.get("ingridient");
-    alert(newIngredient);
-
+    const formData = new FormData(event.currentTarget); //event.currentTarget refers to the form element
+    const newIngredient = formData.get("ingridient"); //"ingridient" is the name attribute of the input field
+    ingridients.push(newIngredient);
+    console.log(ingridients); 
   }
 
   return (
@@ -43,9 +43,9 @@ const Main = () => {
         <button type='submit'>Add ingridients</button>
 
       </form>
-      {/* <ul>
+      <ul>
         {ingridientList}
-      </ul> */}
+      </ul>
     </main>
   )
 }
