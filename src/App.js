@@ -1,5 +1,6 @@
 import './App.css';
 import Click from './components/Click';
+import ComplexStateArray from './components/ComplexStateArray';
 import Header from './components/Header';
 import Main from './components/Main';
 import No_state from './components/No_state';
@@ -12,7 +13,8 @@ function App() {
       <Main />
       {/* <Click /> */}
       {/* <No_state /> */}
-      <Ternary />
+      {/* <Ternary /> */}
+      <ComplexStateArray />
     </div>
   );
 }
