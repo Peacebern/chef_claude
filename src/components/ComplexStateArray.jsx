@@ -1,3 +1,5 @@
+import React from "react"
+
 export default function ComplexStateArray() {
   /**
      * Challenge: Convert the code below to use an array
