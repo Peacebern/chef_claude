@@ -21,8 +21,11 @@ const [myFavoriteThings, setMyFavoriteThings] = React.useState([])
   function addFavoriteThing() {
     // we domn't use push with state arrays because it mutates the existing array an d does not create a new one
     //Here we use a call back function to get the latest state value because state updates are asynchronous and we need the most recent value to add the new item correctly
-    setMyFavoriteThings(prevFavoriteThings => [...prevFavoriteThings, "Test"]); //spread operator here depicts the old array items and adds the new item "Test", "[]" here creates a new array
-    
+
+    //setMyFavoriteThings(prevFavoriteThings => [...prevFavoriteThings, "Test"]); //spread operator here depicts the old array items and adds the new item "Test", "[]" here creates a new array
+    setMyFavoriteThings(prevFavoriteThings => 
+      [...prevFavoriteThings, allFavoriteThings[prevFavoriteThings.length] ]
+    ) //this adds a new item from allFavoriteThings based on the current length of myFavoriteThings
   }
   
   return (

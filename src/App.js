@@ -14,7 +14,7 @@ function App() {
       {/* <Click /> */}
       {/* <No_state /> */}
       {/* <Ternary /> */}
-      <ComplexStateArray />
+      {/* <ComplexStateArray /> */}
     </div>
   );
 }
