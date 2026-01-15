@@ -4,8 +4,8 @@ export default function ComplexStateArray() {
   /**
      * Challenge: Convert the code below to use an array
      * held in state instead of a local variable. Initialize 
-     * the state array as an empty array
-     * 
+     * the state array as an empty array 
+     *  
      * Don't worry about fixing `addFavoriteThing` quite yet.
      */
 

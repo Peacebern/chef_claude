@@ -107,7 +107,7 @@ export default function Main() {
       </form>
       <ul>
         {ingredientsListItems}
-      </ul>
+      </ul> 
     </main>
   )
 }
